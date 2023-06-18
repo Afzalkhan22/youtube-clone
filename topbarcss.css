@@ -1,0 +1,137 @@
+.topbar {
+    display: flex;
+    position: fixed;
+    right: 0;
+    left: 0;
+    top: 0;
+    background-color: white;
+    z-index: 100;
+    border-bottom: 1px solid #dedede;
+}
+.right {
+    height: 55px;
+    width: 200px;
+    flex-shrink: 0;
+}
+
+.left {
+    display: flex;
+    align-items: center;
+    width: 300px;
+}
+
+.hamburger {
+    margin: 20px;
+    width: 23px;
+    object-fit: contain;
+}
+
+.youtubelogo {
+    width: 90px;
+}
+
+.right {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.add,
+.bell,
+.profile,
+.apps {
+    width: 23px;
+}
+
+.profile {
+    width: 30px;
+    margin-right: 20px;
+    border-radius: 15px;
+}
+
+.middle {
+    display: flex;
+    align-items: center;
+    flex: 1;
+}
+
+.search {
+    display: flex;
+    flex: 1;
+    max-width: 300px;
+    height: 35px;
+    padding: 12px;
+    background-color: white;
+    border: 1px solid #cccccc;
+    box-shadow: inset 0px 1px 2px #eeeeee;
+    width: 0;
+}
+
+.search::placeholder {
+    font-size: 15px;
+    color: rgb(168, 157, 157);
+}
+.voicesearch {
+    width: 30px;
+    height: 22px;
+    background-color: #f8f8f8;
+}
+
+.pivbut {
+    position: relative;
+    width: 65px;
+    height: 35px;
+    border: 1px solid #cccccc;
+    background-color: #f8f8f8;
+}
+.tooltip{
+    position: absolute;
+    background-color: rgb(129, 129, 129);
+    color:white;
+    padding: 2px 3px;
+    border-radius: 3px;
+    margin-top: 65px;
+    opacity: 0;
+    pointer-events: none;
+    transition: opacity 0.15s;
+}
+.tool-search{
+    display: flex;
+    align-items: center; 
+    justify-content: center;
+}
+.search-pic {
+    padding-top: 5px;
+    width: 45px;
+    height: 25px;
+    object-fit: contain;
+}
+.tool-search:hover .tooltip{
+    opacity: 1;
+
+}
+
+.voicebut {
+    margin-left: 10px;
+    margin-right: 25px;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    border-radius: 20px;
+    border: none;
+    background-color: #f8f8f8;
+}
+
+.notify {
+    position: relative;
+}
+.notifynum{
+    position: absolute;
+    width: 20px;
+    border-radius: 20px;
+    background-color: red;
+    border: none;
+    top: 0px;
+    left:15px;
+    font-size: 12px;
+}
